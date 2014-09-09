@@ -13,7 +13,8 @@ The recommended way to install Woopra SDK is through Composer.
 curl -sS https://getcomposer.org/installer | php
 
 # Add Guzzle as a dependency
-php composer.phar require aamortimer/woopra:dev-master
+
+composer require aamortimer/woopra:dev-master
 ```
 
 After installing, you need to require Composer's autoloader:
