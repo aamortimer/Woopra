@@ -80,6 +80,22 @@ $rsp = $search->onlineCount(array(
   'website'=>$website
 ));
 print_r($rsp);
+
+#Labels API
+Only the list methods of the labels API is supported to see further details and the options available visit (https://www.woopra.com/docs/developer/labels-api/)
+```php
+// setup namespace
+use aamortimer\Woopra\userData;
+
+// set up the search class
+$labels = new userData(array(
+  'app-id' => 'YOUR APP ID HERE',
+  'secret-key' => 'YOUR SECRET KEY HERE'
+));
+
+$rsp = $this->userData->show(array(
+  'website'=>'example.com'
+));
 ```
 
 #Analytics API
