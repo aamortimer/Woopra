@@ -97,6 +97,7 @@ $labels = new userData(array(
 $rsp = $this->userData->show(array(
   'website'=>'example.com'
 ));
+```
 
 #Analytics API
 All methods of the analytics API are supported to see further details and the options available visit (https://www.woopra.com/docs/developer/analytics-api/)
