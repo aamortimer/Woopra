@@ -89,12 +89,12 @@ Only the list methods of the labels API is supported to see further details and 
 use aamortimer\Woopra\userData;
 
 // set up the search class
-$labels = new userData(array(
+$labels = new UserData(array(
   'app-id' => 'YOUR APP ID HERE',
   'secret-key' => 'YOUR SECRET KEY HERE'
 ));
 
-$rsp = $this->userData->show(array(
+$rsp = $labels->show(array(
   'website'=>'example.com'
 ));
 ```
