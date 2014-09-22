@@ -33,6 +33,18 @@ use aamortimer\Woopra\Woopra;
 Woopra::getAllLabels(array('app-id'=>'', 'secret-key'=>'', 'website'=>''), function($labels){
   print_r($labels);
 });
+
+// you can also return data from the function rather then using a callback
+$labels = Woopra::getAllLabels(array('app-id'=>'', 'secret-key'=>'', 'website'=>''));
+
+// get all user labels
+// search parameter should be an email address or session id
+Woopra::getUserLabels(array('app-id'=>'', 'secret-key'=>'', 'website'=>'', 'search'=>''), function($labels){
+  print_r($labels);
+});
+
+// you can also return data from the function rather then using a callback
+$labels = Woopra::getUserLabels(array('app-id'=>'', 'secret-key'=>'', 'website'=>'', 'search'=>''));
 ```
 
 #Search API

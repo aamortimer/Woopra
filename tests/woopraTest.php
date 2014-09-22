@@ -8,13 +8,21 @@ class WoopraTest extends PHPUnit_Framework_TestCase {
     $this->data = [
       'app-id' => '',
       'secret-key' => '',
-      'website' => 'example.com'
+      'website' => 'example.com',
+      'search' => 'example@example.com'
     ];
   }
 
   public function testGetLabels()
   {
     Woopra::getAllLabels($this->data, function($labels){
+      $this->assertTrue(is_array($labels));
+    });
+  }
+
+  public function testUserLabels()
+  {
+    Woopra::getUserLabels($this->data, function($labels){
       $this->assertTrue(is_array($labels));
     });
   }
