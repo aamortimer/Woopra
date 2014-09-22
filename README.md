@@ -22,6 +22,19 @@ After installing, you need to require Composer's autoloader:
 require 'vendor/autoload.php';
 ```
 
+#Helpers
+Started adding some helper functions to make it easier to get at the data quickly.
+
+```php
+// setup namespace
+use aamortimer\Woopra\Woopra;
+
+// get all the labels that have been setup
+Woopra::getAllLabels(array('app-id'=>'', 'secret-key'=>'', 'website'=>''), function($labels){
+  print_r($labels);
+});
+```
+
 #Search API
 All methods of the search API are supported to see further details and the options available visit (https://www.woopra.com/docs/developer/search-api/)
 
