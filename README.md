@@ -80,6 +80,7 @@ $rsp = $search->onlineCount(array(
   'website'=>$website
 ));
 print_r($rsp);
+```
 
 #Labels API
 Only the list methods of the labels API is supported to see further details and the options available visit (https://www.woopra.com/docs/developer/labels-api/)
@@ -96,7 +97,6 @@ $labels = new userData(array(
 $rsp = $this->userData->show(array(
   'website'=>'example.com'
 ));
-```
 
 #Analytics API
 All methods of the analytics API are supported to see further details and the options available visit (https://www.woopra.com/docs/developer/analytics-api/)
