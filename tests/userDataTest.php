@@ -5,10 +5,10 @@ date_default_timezone_set('Europe/London');
 class UserDataTest extends PHPUnit_Framework_TestCase {
   public function setUp()
   {
-    $this->website = 'bookfhr.com';
+    $this->website = 'example.com';
     $this->userData = new userData(array(
-      'app-id' => 'HWFHNCS42SROLUGUF2ZHOMMSSHQKME7W',
-      'secret-key' => 'wAhTUqyC0yyzQEJhsG5LO9EwXEI9ZIR1BP6Npx1Rx42xMjHcIBPMCKRbshRgcWbH'
+      'app-id' => '',
+      'secret-key' => ''
     ));
   }
 
